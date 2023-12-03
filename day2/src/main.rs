@@ -1,6 +1,6 @@
 use std::fs::File;
-use std::io::{BufRead, BufReader, Error};
-use Day2::sum_id_possible_games;
+use std::io::{BufRead, BufReader};
+use day2::*;
 
 fn main() {
     let path = "input.txt";
@@ -12,7 +12,6 @@ fn main() {
         lines.push(l.unwrap());
     }
 
-    let result = sum_id_possible_games(lines);
-
-    println!("Result: {}", result);
+    println!("Result for part 1: {}", sum_id_possible_games(&lines));
+    println!("Result for part 2: {}", sum_of_pow_min_cubes(&lines));
 }

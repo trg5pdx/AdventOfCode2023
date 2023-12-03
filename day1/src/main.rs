@@ -1,6 +1,6 @@
 use std::fs::File;
-use std::io::{BufRead, BufReader, Error};
-use Day1::calibration_sum;
+use std::io::{BufRead, BufReader};
+use day1::calibration_sum;
 
 fn main() {
     let path = "input.txt";
