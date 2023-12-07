@@ -12,5 +12,6 @@ fn main() {
         lines.push(l.unwrap().chars().collect());
     }
 
-    println!("Result {}", sum_part_numbers(lines));
+    println!("Result for part 1: {}", sum_part_numbers(&lines));
+    println!("Result for part 2: {}", sum_gear_ratio(&lines));
 }
