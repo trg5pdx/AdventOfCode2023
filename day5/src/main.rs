@@ -9,8 +9,9 @@ fn main() {
     let mut lines = String::new();
 
     for l in buffered.lines() {
-        lines += &l.unwrap();
+        lines += &(l.unwrap() + "\n");
     }
 
     println!("Result for part 1: {}", get_lowest_seed_location(&lines));
+    // println!("Result for part 2: {}", get_lowest_seed_location_from_range(&lines));
 }
